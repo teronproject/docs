@@ -55,24 +55,20 @@ Publishing details of an unpatched vulnerability before the maintainer has had t
 Understanding how the platform is built may help you assess the scope of a potential vulnerability.
 
 **Platform infrastructure**
-- All traffic is served over HTTPS with TLS encryption
-- Databases are encrypted at rest, and access follows the principle of least privilege
-- API keys and credentials are stored as environment variables, not in source code
-- Production systems require multi-factor authentication
+- All traffic is served over HTTPS
+- Databases are encrypted at rest and access follows the principle of least privilege
 
 **Authentication**
-- Teron uses Web3 wallet-based authentication — there are no passwords stored on servers
+- Teron uses Web3 wallet-based authentication — no passwords are stored on Teron's servers
 - Authentication is handled through cryptographic signature verification using your wallet
-- Session tokens are scoped and expire after inactivity
 
 **Payments**
-- Premium service fees (Contract Verification, On-Chain Metadata) are sent to a cold wallet that is not connected to any online systems
+- Premium service fees are sent to a cold wallet that is not connected to any online systems
 
 **Smart contracts**
-- Token contracts are compiled using Solidity 0.8.20 with a pinned compiler version and consistent optimization settings
-- Contracts use standard OpenZeppelin libraries — widely audited, battle-tested code
-- No hidden mint functions, admin backdoors, pause mechanisms, or blacklist features are included in the standard template
-- When you purchase contract verification, the exact source code is published to BscScan for public inspection
+- Token contracts are written in Solidity 0.8.20 using standard OpenZeppelin libraries
+- No hidden mint functions, admin backdoors, or blacklist features are included in the standard template
+- When you purchase contract verification, the source code is published to BscScan for public inspection
 
 <Info>
   Smart contracts deployed on BNB Chain are **immutable** — once a contract is on the blockchain, it cannot be modified, patched, or upgraded by anyone, including Teron. If a vulnerability is discovered in a deployed contract template, we cannot retroactively fix existing deployments. In that situation, Teron will communicate transparently about the nature and scope of the impact and work with affected users on any available mitigation options.

@@ -1,5 +1,5 @@
 ---
-title: "Token Fields: Configuring Your BEP-20 Token"
+title: "Token Fields: Configure Your BEP-20 Token on Teron"
 sidebarTitle: "Token Fields"
 description: "Understand each field on the Teron token creation form — what it does, how to fill it in correctly, and what you cannot change after deployment."
 ---
@@ -57,7 +57,7 @@ Before you deploy, you need to fill in four fields on the [token creation form](
   - `1000000000` — one billion tokens
   - `21000000` — twenty-one million tokens (common for projects that want to mirror Bitcoin's supply model)
 
-  **Best practice:** Think carefully about your supply in relation to your project. A very large supply (e.g. trillions of tokens) combined with a low price per token is a common pattern, but there is no formula that works for every project. The total supply is fixed at deployment unless your contract includes mint functionality — standard Teron contracts may allow the owner to mint additional tokens after deployment.
+  **Best practice:** Think carefully about your supply in relation to your project. A very large supply (e.g. trillions of tokens) combined with a low price per token is a common pattern, but there is no formula that works for every project. The total supply is fixed permanently at deployment — standard Teron contracts do not include any mint functions, so no additional tokens can be created after the contract is deployed.
 </ParamField>
 
 <ParamField body="Decimals" type="integer" required>
