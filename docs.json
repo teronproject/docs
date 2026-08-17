@@ -82,6 +82,15 @@
             ]
           },
           {
+            "group": "Tokenomics",
+            "pages": [
+              "tokenomics/overview",
+              "tokenomics/ter-token",
+              "tokenomics/terr-token",
+              "tokenomics/conversion"
+            ]
+          },
+          {
             "group": "Dashboard",
             "pages": [
               "dashboard/overview",
