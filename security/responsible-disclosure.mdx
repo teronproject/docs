@@ -1,0 +1,96 @@
+---
+title: "Teron Security Vulnerability Responsible Disclosure"
+sidebarTitle: "Disclosure"
+description: "How to report a security vulnerability to Teron. We take all reports seriously and aim to acknowledge them within 48 hours. Please disclose responsibly."
+---
+
+Security is a shared responsibility. Even with careful engineering practices, vulnerabilities can exist in any software platform. If you discover something that looks like a security issue in Teron — whether in our web application, our infrastructure, or the smart contract templates we use — we want to hear from you. Responsible disclosure protects every user of the platform, and we are committed to responding promptly and transparently.
+
+## How to report a vulnerability
+
+Send your report by email to **[teronproject@gmail.com](mailto:teronproject@gmail.com)**.
+
+To help us investigate as quickly as possible, include the following in your report:
+
+- A clear description of the vulnerability and its potential impact
+- Step-by-step instructions to reproduce the issue
+- Any relevant screenshots, logs, or proof-of-concept code
+
+You do not need to provide a fix — a clear, reproducible description is enough for us to begin an investigation.
+
+## The responsible disclosure process
+
+<Steps>
+  <Step title="Find a potential vulnerability">
+    You identify behaviour that suggests a security issue in the Teron platform, its smart contracts, or its infrastructure.
+  </Step>
+  <Step title="Document the issue">
+    Write up a clear description covering: what the vulnerability is, what impact it could have, and the steps needed to reproduce it. Include any supporting evidence such as screenshots, logs, or a proof of concept.
+  </Step>
+  <Step title="Send your report to Teron">
+    Email your full report to [teronproject@gmail.com](mailto:teronproject@gmail.com). Use a descriptive subject line such as "Security Vulnerability Report – [brief description]".
+  </Step>
+  <Step title="Wait for acknowledgment">
+    We aim to acknowledge all vulnerability reports within **48 hours** of receipt. You will receive a confirmation that your report has been received and is under review.
+  </Step>
+  <Step title="Allow time for investigation and remediation">
+    Do not publicly disclose the vulnerability while Teron is actively investigating and working on a fix. We will keep you updated on remediation progress and let you know when it is appropriate to discuss the issue publicly.
+  </Step>
+</Steps>
+
+<Note>
+  We aim to acknowledge every vulnerability report within **48 hours**. After that, we will provide updates on our investigation and remediation progress. We believe clear, timely communication is part of taking security seriously.
+</Note>
+
+## Why responsible disclosure matters
+
+Publishing details of an unpatched vulnerability before the maintainer has had time to fix it puts every user of the platform at risk. Attackers monitor public disclosures and can exploit a gap between the announcement and the patch.
+
+<Warning>
+  Please **do not publicly disclose** a vulnerability — on social media, in forums, or anywhere else — before Teron has had a reasonable opportunity to investigate and address the issue. Early disclosure can cause real harm to other users. We will work with you to coordinate a responsible public disclosure timeline once the issue is resolved.
+</Warning>
+
+## Teron's security practices
+
+Understanding how the platform is built may help you assess the scope of a potential vulnerability.
+
+**Platform infrastructure**
+- All traffic is served over HTTPS with TLS encryption
+- Databases are encrypted at rest, and access follows the principle of least privilege
+- API keys and credentials are stored as environment variables, not in source code
+- Production systems require multi-factor authentication
+
+**Authentication**
+- Teron uses Web3 wallet-based authentication — there are no passwords stored on servers
+- Authentication is handled through cryptographic signature verification using your wallet
+- Session tokens are scoped and expire after inactivity
+
+**Payments**
+- Premium service fees (Contract Verification, On-Chain Metadata) are sent to a cold wallet that is not connected to any online systems
+
+**Smart contracts**
+- Token contracts are compiled using Solidity 0.8.20 with a pinned compiler version and consistent optimization settings
+- Contracts use standard OpenZeppelin libraries — widely audited, battle-tested code
+- No hidden mint functions, admin backdoors, pause mechanisms, or blacklist features are included in the standard template
+- When you purchase contract verification, the exact source code is published to BscScan for public inspection
+
+<Info>
+  Smart contracts deployed on BNB Chain are **immutable** — once a contract is on the blockchain, it cannot be modified, patched, or upgraded by anyone, including Teron. If a vulnerability is discovered in a deployed contract template, we cannot retroactively fix existing deployments. In that situation, Teron will communicate transparently about the nature and scope of the impact and work with affected users on any available mitigation options.
+</Info>
+
+## Scope
+
+We are interested in reports covering:
+
+- Vulnerabilities in the Teron web application (teron.io)
+- Security issues in Teron's smart contract templates
+- Authentication or session management weaknesses
+- Data exposure or access control issues in platform infrastructure
+
+We are generally not in scope for issues in third-party wallet software, BNB Chain itself, or services outside of Teron's control — though we appreciate heads-up reports regardless.
+
+## Contact
+
+For vulnerability reports: **[teronproject@gmail.com](mailto:teronproject@gmail.com)**
+
+For general security questions: **[hello@teron.io](mailto:hello@teron.io)**

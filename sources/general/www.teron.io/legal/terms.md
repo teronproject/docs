@@ -1,0 +1,81 @@
+# Source: https://www.teron.io/legal/terms
+
+# Terms of Service
+
+Effective date: August 10, 2026 · Last updated: August 10, 2026
+
+Welcome to Teron. By accessing or using our platform at teron.io, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.
+
+Teron is a self-service token creation platform built on BNB Smart Chain. We provide tools for creating BEP-20 tokens, deploying smart contracts, and managing token profiles. These terms govern your access to and use of those tools.
+
+## 1\. Eligibility
+
+You must be at least 18 years old to use Teron. By connecting your wallet and using our services, you confirm that you meet this requirement and that you have the legal capacity to enter into a binding agreement.
+
+You are responsible for ensuring that your use of Teron complies with the laws and regulations of your jurisdiction. Teron does not offer services in jurisdictions where token creation or cryptocurrency activities are prohibited.
+
+## 2\. Account and Wallet
+
+Teron uses Web3 wallet authentication. We do not create accounts with usernames and passwords. Your blockchain wallet address serves as your identity on the platform.
+
+You are solely responsible for keeping your wallet credentials, private keys, and seed phrases secure. Teron does not have access to your private keys and cannot recover them if lost.
+
+Any transaction signed with your wallet is considered authorized by you. We are not liable for any loss resulting from unauthorized access to your wallet.
+
+## 3\. Services
+
+Teron provides the following services on BNB Smart Chain:
+
+- BEP-20 token creation with customizable name, symbol, decimals, and supply
+- Smart contract compilation and deployment to BNB Chain
+- BscScan contract verification as a premium add-on
+- Token profile pages with public project information
+- A project leaderboard and community task system
+
+## 4\. Fees and Payments
+
+Token deployment requires paying gas fees directly to the BNB Smart Chain network. Teron does not collect these fees.
+
+Premium services such as contract verification and on-chain metadata have fixed BNB fees displayed before purchase. These fees are sent to our designated cold wallet. All fees are clearly shown before you sign any transaction.
+
+All payments on the blockchain are final and non-refundable. Once a transaction is confirmed on BNB Chain, it cannot be reversed by Teron or any third party.
+
+## 5\. Your Responsibilities
+
+You agree not to use Teron to create tokens that infringe on intellectual property, impersonate existing projects, promote illegal activities, or mislead investors. You are fully responsible for the tokens you create and any representations you make about them.
+
+Teron is a tool. We do not endorse, audit, or guarantee the quality, legitimacy, or value of any token created through our platform. The creator of a token holds full responsibility for how it is used and marketed.
+
+## 6\. Intellectual Property
+
+The Teron platform, including its code, design, branding, and documentation, is the intellectual property of Teron. You may not copy, modify, distribute, or reverse-engineer any part of the platform without our written consent.
+
+You retain ownership of any content you upload to the platform, including token logos, descriptions, and social media links. By uploading this content, you grant Teron a non-exclusive license to display it on your public token profile page.
+
+## 7\. Smart Contract Ownership
+
+When you deploy a token through Teron, the smart contract is deployed from your wallet. You are the owner of that contract on the blockchain. Teron does not retain any admin access, ownership keys, or backdoor functions in the deployed contracts.
+
+Once deployed, your smart contract is immutable and operates independently on BNB Chain. Teron cannot modify, pause, or delete your deployed contract.
+
+## 8\. Limitation of Liability
+
+Teron is provided on an "as is" and "as available" basis. We do not guarantee uninterrupted access, error-free operation, or specific outcomes from using our services.
+
+We are not liable for any direct, indirect, incidental, or consequential damages arising from your use of the platform, including but not limited to loss of funds, failed transactions, smart contract bugs, or regulatory actions.
+
+Our total liability to you for any claim related to the platform shall not exceed the amount you paid in fees to Teron in the twelve months preceding the claim.
+
+## 9\. Termination
+
+We reserve the right to suspend or terminate your access to Teron at any time if you violate these terms, engage in fraudulent activity, or if we are required to do so by law. Termination does not affect any tokens or contracts already deployed to the blockchain, as those exist independently on BNB Chain.
+
+## 10\. Changes to These Terms
+
+We may update these terms from time to time. When we make significant changes, we will update the "Last updated" date at the top of this page. Your continued use of Teron after changes are posted constitutes your acceptance of the updated terms.
+
+## 11\. Contact
+
+If you have questions about these Terms of Service, you can reach us at:
+
+Email: teronproject@gmail.com

@@ -1,0 +1,69 @@
+---
+title: "Troubleshooting Token Deployment on BNB Chain"
+sidebarTitle: "Troubleshooting"
+description: "Solutions for common issues when deploying BEP-20 tokens on Teron — failed transactions, wrong network, tokens not showing in wallets, and more."
+---
+
+Most deployment issues on Teron come down to a small number of common causes: wallet configuration, insufficient BNB, or network conditions. The issues below cover the most frequent problems and how to resolve them.
+
+<Warning>
+  Failed deployment transactions may still consume a small amount of gas, even if your contract was not deployed. This is a BNB Chain network behaviour — the gas used to attempt the transaction is spent regardless of outcome.
+</Warning>
+
+<AccordionGroup>
+  <Accordion title="Transaction failed or was rejected">
+    There are two common reasons a transaction fails at the wallet stage:
+
+    **You rejected it in your wallet.** If you dismissed the wallet prompt or clicked **Reject**, the transaction was cancelled before it reached the network. No gas was spent. Simply go back to the Teron creation form and try again.
+
+    **The transaction ran out of gas.** If your wallet's gas limit was set too low, the transaction may have been submitted but failed on-chain. In your wallet settings, try increasing the gas limit before attempting another deployment. MetaMask lets you edit the gas limit in the transaction confirmation screen under **Advanced options**.
+
+    If the failure reason is unclear, check the transaction hash in your deployment history and look it up on [bscscan.com](https://bscscan.com) to see the exact failure reason recorded on-chain.
+  </Accordion>
+
+  <Accordion title="Insufficient BNB for gas">
+    Your wallet must hold enough BNB to pay the network gas fee. If your balance is too low, the transaction will fail before it is processed.
+
+    To resolve this, add more BNB to your wallet and try again. You only need a small amount — gas fees on BNB Chain are typically under $0.50 under normal network conditions. You can acquire BNB through a centralized exchange and transfer it to your wallet address.
+  </Accordion>
+
+  <Accordion title="Wrong network selected in wallet">
+    Teron deploys contracts on BNB Chain (also called BNB Smart Chain). If your wallet is connected to a different network — such as Ethereum, Polygon, or a testnet — the transaction will either fail or be sent to the wrong network.
+
+    To fix this, switch your wallet to **BNB Smart Chain** with **chain ID 56** before deploying. In MetaMask, click the network selector at the top and choose BNB Smart Chain (you may need to add it manually if it is not listed). In Trust Wallet, the network is shown alongside the token balance — make sure it shows BNB Smart Chain.
+
+    Once you have switched networks, reload the Teron page and try again.
+  </Accordion>
+
+  <Accordion title="Contract not showing on BscScan">
+    After a successful deployment, BscScan needs a short time to index the new contract. This is typically just a minute or two, but it can occasionally take a bit longer during periods of high network activity.
+
+    If your contract address returns no results on BscScan immediately after deployment, wait a few minutes and refresh the page. The transaction hash from your Teron dashboard will appear on BscScan sooner than the contract page — you can use it to confirm the transaction was successful while you wait.
+  </Accordion>
+
+  <Accordion title="Token not visible in my wallet">
+    Most wallets do not automatically detect new tokens. You need to import your token manually using the contract address.
+
+    **MetaMask:** Open the **Tokens** tab → **Import tokens** → **Custom token** → paste your contract address → **Add custom token** → **Import tokens**.
+
+    **Trust Wallet:** Tap the token list icon → search for your symbol → if not found, tap **Add Custom Token** → set network to **BNB Smart Chain** → paste your contract address → tap **Done**.
+
+    Your contract address is listed in your [Teron deployment history](https://teron.io/dashboard). If your token displays without a logo or description in Trust Wallet, consider adding [On-Chain Metadata](/token-creation/on-chain-information).
+  </Accordion>
+
+  <Accordion title="Contract verification is taking too long">
+    Contract verification depends on the BscScan API, which is an external service. Under normal conditions, verification completes within a few minutes after your payment is confirmed.
+
+    If the status in your Teron dashboard has been pending for more than **30 minutes**, contact support at [hello@teron.io](mailto:hello@teron.io) and include your contract address and the payment transaction hash. Teron can investigate whether the submission reached BscScan and resubmit if needed.
+  </Accordion>
+
+  <Accordion title="Platform shows a maintenance message">
+    Teron administrators can pause certain platform features during scheduled maintenance or to address an issue. If you see a maintenance notice, the platform is temporarily unavailable for that feature.
+
+    In this case, wait a short time and try again. You can also check Teron's official channels (X/Twitter: [@teronapp](https://x.com/teronapp)) for status updates. Your already-deployed contracts are not affected by platform maintenance — they continue to exist and operate independently on BNB Chain.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  If you cannot resolve an issue using the steps above, contact the Teron support team at [hello@teron.io](mailto:hello@teron.io). When you reach out, include your **contract address** and the relevant **transaction hash** — this helps the team locate your deployment and investigate quickly.
+</Note>

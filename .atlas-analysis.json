@@ -1,36 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Teron",
+  "projectType": "saas",
+  "projectName": "Teron",
+  "projectDescription": "Teron is a Web3 token launch platform on BNB Chain that lets anyone create, deploy, and verify BEP-20 tokens without writing code.",
   "theme": "luma",
-  "favicon": "https://media.brand.dev/dd30ffb4-dacd-413e-b78e-0ad24051b8df.png",
-  "logo": {
-    "light": "https://media.brand.dev/8b47d82b-dea2-4978-a79e-5cd14e708911.svg",
-    "dark": "https://media.brand.dev/8b47d82b-dea2-4978-a79e-5cd14e708911.svg"
-  },
-  "colors": {
-    "primary": "#1d1d21",
-    "light": "#eab308",
-    "dark": "#edc54d"
-  },
-  "font": {
-    "headings": { "family": "Inter" },
-    "body": { "family": "Inter" }
-  },
-  "navbar": {
-    "links": [
-      { "label": "Website", "href": "https://teron.io" },
-      { "label": "Dashboard", "href": "https://teron.io/dashboard" }
-    ],
-    "primary": {
-      "type": "github",
-      "href": "https://github.com/teronapp"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/teronapp"
-    }
-  },
+  "primaryColor": "#1d1d21",
+  "lightColor": "#eab308",
+  "darkColor": "#edc54d",
   "navigation": {
     "tabs": [
       {
@@ -113,5 +88,29 @@
         ]
       }
     ]
-  }
+  },
+  "keyFeatures": [
+    "No-code BEP-20 token deployment on BNB Smart Chain",
+    "Smart contract verification on BscScan (~$2 in BNB)",
+    "On-chain metadata publishing — logo, description, social links (~$3 in BNB)",
+    "Public token profile pages at teron.io/t/{token_name}",
+    "Project leaderboard for community discovery",
+    "Wallet-first identity — no passwords required",
+    "Creator dashboard for managing tokens, deployments, and rewards",
+    "TERR reward token earned through platform activities and tasks",
+    "TER ecosystem token",
+    "Community tasks (follow, like, join, campaign participation)",
+    "Deployment history and transaction tracking",
+    "Gas fee transparency — token creation is free beyond standard BNB gas"
+  ],
+  "publicApiSurface": [
+    "Dashboard: /dashboard",
+    "Token Creation: /dashboard/create",
+    "Task Center: /dashboard/tasks",
+    "Public Token Profile: /t/{token_name}",
+    "Project Leaderboard: /leaderboard",
+    "Legal: /legal, /legal/terms, /legal/privacy, /legal/disclaimer, /legal/risk-disclosure, /legal/security-policy, /legal/cookies",
+    "Pricing: /pricing",
+    "Contact: /contact"
+  ]
 }

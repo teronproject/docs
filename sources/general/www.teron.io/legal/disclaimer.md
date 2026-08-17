@@ -1,0 +1,57 @@
+# Source: https://www.teron.io/legal/disclaimer
+
+# Disclaimer
+
+Effective date: August 10, 2026 · Last updated: August 10, 2026
+
+Please read this disclaimer carefully before using the Teron platform. By accessing or using teron.io, you acknowledge that you have read, understood, and agree to this disclaimer.
+
+## 1\. No Financial Advice
+
+Teron is a self-service technology platform for creating BEP-20 tokens on BNB Smart Chain. Nothing on this platform constitutes financial advice, investment advice, trading advice, or any other form of professional advice.
+
+We do not recommend, endorse, or suggest the creation of any specific token. Token creation, buying, selling, and trading carry inherent financial risks. You should consult qualified financial advisors before making any financial decisions related to digital assets.
+
+## 2\. No Guarantees
+
+Teron does not guarantee that any token created through our platform will gain value, be listed on any exchange, attract investors, or generate any financial returns. Token value is determined entirely by market forces outside of our control.
+
+We do not guarantee the performance, uptime, or availability of the platform. While we work to maintain reliable service, blockchain interactions depend on external infrastructure including BNB Chain validators, RPC providers, and block explorers.
+
+## 3\. Smart Contract Risks
+
+Smart contracts are programs deployed on a public blockchain. Once deployed, they cannot be modified by Teron or any party. While we use standard, well-tested contract templates, no software is free from potential vulnerabilities.
+
+You are responsible for understanding the smart contract code that is deployed on your behalf. The source code is publicly available and verified on BscScan when you purchase the verification service. Teron does not provide formal security audits for individual token deployments.
+
+## 4\. Third-Party Services
+
+Teron integrates with third-party services including BNB Smart Chain, BscScan, WalletConnect, and various wallet providers. We are not responsible for the availability, accuracy, or security of these third-party services. Their use is subject to their own terms and privacy policies.
+
+## 5\. Regulatory Compliance
+
+Cryptocurrency regulations vary by jurisdiction and are evolving rapidly. You are solely responsible for ensuring that your use of Teron and any tokens you create comply with the laws and regulations applicable to you.
+
+Teron does not provide legal advice regarding the regulatory status of tokens created through our platform. If you are unsure whether token creation is legal in your jurisdiction, consult a qualified legal professional before using our services.
+
+## 6\. Token Creator Responsibility
+
+As a token creator, you bear full responsibility for how your token is marketed, distributed, and used. This includes any claims you make about your token's utility, value, or purpose.
+
+Teron provides the technical tools for token creation. We do not review, approve, or endorse any tokens or projects built using our platform. The presence of a token on Teron's leaderboard or profile pages does not imply any endorsement or verification of the project's legitimacy.
+
+## 7\. Limitation of Liability
+
+To the maximum extent permitted by law, Teron and its team shall not be liable for any loss of funds, data, revenue, profits, or any indirect, incidental, or consequential damages arising from your use of the platform.
+
+This limitation applies regardless of whether the damages arise from contract, negligence, strict liability, or any other legal theory, even if we have been advised of the possibility of such damages.
+
+## 8\. External Links
+
+Teron may contain links to external websites or resources. We do not control and are not responsible for the content, privacy practices, or availability of external sites. Links do not imply endorsement.
+
+## 9\. Contact
+
+If you have questions about this disclaimer, contact us at:
+
+Email: teronproject@gmail.com

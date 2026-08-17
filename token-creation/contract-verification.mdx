@@ -1,0 +1,75 @@
+---
+title: "BscScan Smart Contract Verification on BNB Chain"
+sidebarTitle: "Verification"
+description: "Learn how Teron's contract verification service publishes your Solidity source code to BscScan, adding the green checkmark and increasing token transparency."
+---
+
+Contract verification is the process of publishing your token's exact Solidity source code to [BscScan](https://bscscan.com), BNB Chain's block explorer. Once verified, anyone can read the code that powers your token directly on BscScan — alongside a green checkmark that signals the published source matches the deployed bytecode.
+
+This is an optional paid service offered by Teron. The fee is approximately **$2, paid in BNB**, which is transferred to Teron's cold wallet to cover the infrastructure costs of running the verification process.
+
+## Why verification matters
+
+When your contract is unverified, BscScan shows only the compiled bytecode — a long string of machine-readable hex that most people cannot interpret. Verification replaces that with the human-readable Solidity source code, making your contract fully transparent.
+
+There are a few practical reasons to verify:
+
+- **Investor confidence.** Token holders and prospective buyers can confirm that the contract does exactly what you say it does — no hidden mint functions, no blacklists, no admin backdoors (unless explicitly configured).
+- **Exchange and tracker requirements.** Many centralized exchanges, DEX aggregators, and token tracking sites require verified contracts as part of their listing process.
+- **The green checkmark.** BscScan displays a visible green checkmark badge on verified contracts. It is widely recognized as a basic signal of transparency.
+
+<Info>
+  Once your contract is verified, the source code is permanently public on BscScan. This cannot be undone or hidden.
+</Info>
+
+## How to verify your contract
+
+<Steps>
+  <Step title="Open your token in the Teron dashboard">
+    Go to [teron.io/dashboard](https://teron.io/dashboard) and find the token you want to verify in your deployment history. Click on it to open the token detail view.
+  </Step>
+
+  <Step title="Select Verify Contract">
+    Click the **Verify Contract** option for that token. Teron will display the exact BNB fee required for this transaction.
+  </Step>
+
+  <Step title="Review the fee">
+    The BNB amount shown is calculated to equal approximately $2 at the current BNB market price. This fee is sent directly to Teron's cold wallet.
+
+    <Note>
+      The exact BNB amount will vary slightly depending on the current BNB/USD price at the time you verify. The dollar-equivalent target is approximately $2.
+    </Note>
+  </Step>
+
+  <Step title="Confirm payment in your wallet">
+    Your wallet will prompt you to confirm the fee transaction. Check the recipient address and amount before signing.
+
+    <Warning>
+      Blockchain payments are final. Once you sign and the transaction is confirmed on BNB Chain, the fee cannot be refunded under any circumstances. Make sure you want to proceed before signing.
+    </Warning>
+  </Step>
+
+  <Step title="Teron submits your source code to BscScan">
+    After your payment is confirmed, Teron automatically submits your contract's source code — compiled with Solidity 0.8.20 using consistent optimization settings — to the BscScan verification API.
+  </Step>
+
+  <Step title="Verification completes">
+    BscScan processes the submission and verifies that the source code matches the deployed bytecode. This typically completes within a few minutes. You will see the status update in your Teron dashboard once it is done.
+  </Step>
+
+  <Step title="Green checkmark appears on BscScan">
+    Once verification is complete, your contract page on BscScan will display a green checkmark and a **Contract** tab showing the full Solidity source. Anyone searching for your contract address will see it immediately.
+  </Step>
+</Steps>
+
+## Payment confirmation
+
+Your payment transaction is recorded on BNB Chain. You can verify it at any time by searching your wallet address or the transaction hash on [bscscan.com](https://bscscan.com). The transaction hash is also saved in your Teron deployment history.
+
+## What verification does not do
+
+Verification publishes your source code and confirms that the code matches what is running on-chain. It does not:
+
+- **Audit your contract for security vulnerabilities.** Verification is a transparency tool, not a security review. It does not check for exploitable logic or economic attack vectors.
+- **Guarantee the token's legitimacy or value.** A verified contract still requires users to read and understand the code.
+- **Prevent other parties from deploying similar contracts.** Source code published to BscScan is publicly readable.

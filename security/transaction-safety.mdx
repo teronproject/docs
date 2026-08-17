@@ -1,0 +1,107 @@
+---
+title: "Signing Transactions Safely on BNB Chain with Teron"
+sidebarTitle: "Transaction Safety"
+description: "Learn how to safely review and sign blockchain transactions on Teron. All BNB Chain transactions are final — know what to check before you sign."
+---
+
+Every action you take on Teron that touches the blockchain — deploying a token, paying for a premium service, or interacting with a smart contract — results in a transaction that your wallet will ask you to sign. Once you sign and that transaction is confirmed on BNB Chain, it is permanent. There is no undo button, no refund mechanism, and no way for Teron to reverse it. Taking a few seconds to review each transaction before signing is one of the most important habits you can build as a Web3 user.
+
+## Transactions are irreversible
+
+<Warning>
+  Once a transaction is signed and confirmed on BNB Smart Chain, it **cannot be reversed, cancelled, or refunded by anyone** — including Teron. This applies to token deployments, fee payments, transfers, and all other blockchain interactions. Always review transaction details carefully before signing.
+</Warning>
+
+This is a property of how blockchains work, not a limitation specific to Teron. It means your review happens before you sign — not after.
+
+## What to check before you sign
+
+Your wallet will display a summary of the transaction it is asking you to approve. Before clicking confirm, go through each of the following:
+
+### 1. Confirm you are on the right site
+
+Make sure the transaction request is coming from **https://teron.io**. Phishing sites that impersonate Teron could ask you to sign transactions that send funds to an attacker's address. If you are on the correct site, your browser address bar will show `teron.io` with a valid HTTPS padlock.
+
+### 2. Check the destination address
+
+The address your transaction is being sent to should match what you expect:
+
+- **Token deployment** — you are deploying a contract to the BNB Chain network; the transaction goes to the network itself (contract creation), not a specific address
+- **Fee payments (Contract Verification ~$2, On-Chain Metadata ~$3)** — the transaction goes to Teron's designated cold wallet; the BNB amount shown in your wallet should match the amount displayed on the Teron checkout screen before you confirmed
+
+<Note>
+  Teron's fee payments are sent to a **cold wallet** — an address that is not connected to any live online systems. This significantly reduces the risk of those funds being compromised by an attack on Teron's infrastructure.
+</Note>
+
+### 3. Review the BNB amount
+
+Teron always shows you the exact BNB amount before you sign a fee payment transaction. Compare the amount in your wallet's signing prompt against what was shown on screen. If they differ, do not sign — close the transaction and contact [hello@teron.io](mailto:hello@teron.io).
+
+### 4. Check the gas fee
+
+Gas fees are paid to BNB Chain validators, not to Teron. Your wallet will estimate the gas cost before you confirm. On BNB Chain, gas fees are generally low, but they fluctuate with network activity. If the gas fee looks unexpectedly high, you can wait for network congestion to ease before deploying.
+
+### 5. Confirm you are on BNB Smart Chain
+
+Teron operates on BNB Smart Chain (Chain ID: 56). Before connecting and signing, make sure your wallet is set to BNB Chain and not another network like Ethereum or a testnet. Deploying to the wrong network would waste gas and create a contract that Teron cannot track.
+
+## Fee payment safety
+
+When you purchase a premium service on Teron, the platform displays the exact BNB amount due before you sign anything. The flow looks like this:
+
+<Steps>
+  <Step title="Select the premium service">
+    Choose Contract Verification or On-Chain Metadata from the token dashboard.
+  </Step>
+  <Step title="Review the displayed amount">
+    Teron shows the exact BNB amount and the destination address before any wallet prompt appears.
+  </Step>
+  <Step title="Check your wallet prompt">
+    Your wallet will show the same amount and destination. Confirm they match what Teron displayed.
+  </Step>
+  <Step title="Sign if everything looks correct">
+    Only sign after you are satisfied the amount, destination, and network are all correct.
+  </Step>
+</Steps>
+
+<Tip>
+  Keep only a small amount of BNB in your deployment wallet — enough to cover gas fees and any planned premium service purchases. Avoid storing large holdings in a wallet you connect regularly to web applications. A hardware wallet or a separate cold wallet is better suited for larger balances.
+</Tip>
+
+## What to do if you signed the wrong transaction
+
+Because blockchain transactions are irreversible, there is no way to undo a confirmed transaction — not by you, not by Teron, not by anyone. However, there are still steps worth taking:
+
+<Steps>
+  <Step title="Note the transaction hash">
+    Find the transaction in your wallet's history or on BscScan. Copy the transaction hash — it is the unique identifier for that transaction and will be needed for any investigation.
+  </Step>
+  <Step title="Assess the situation">
+    Determine what happened. Was it an incorrect amount? A transaction sent to the wrong address? Understanding the specifics helps determine if any action is possible.
+  </Step>
+  <Step title="Contact Teron support">
+    Email [hello@teron.io](mailto:hello@teron.io) with the transaction hash and a description of what happened. We cannot reverse the transaction, but we can help you understand the situation, confirm what was received on our end, and advise on next steps where possible.
+  </Step>
+</Steps>
+
+<Warning>
+  If you believe you were tricked into signing a transaction by a phishing site or a malicious link, treat your wallet as potentially compromised. See the [Wallet Safety](/security/wallet-safety) page for steps on how to respond to a compromised wallet.
+</Warning>
+
+## Transaction safety checklist
+
+<Accordion title="Before signing any transaction on Teron">
+  - [ ] The browser URL shows **https://teron.io** with a valid HTTPS padlock
+  - [ ] Your wallet is set to **BNB Smart Chain** (Chain ID: 56)
+  - [ ] The destination address matches what Teron displayed on screen
+  - [ ] The BNB amount matches what Teron showed before the wallet prompt
+  - [ ] The gas fee looks reasonable for current network conditions
+  - [ ] You understand what this transaction will do and are happy to proceed
+</Accordion>
+
+<Accordion title="General Web3 transaction hygiene">
+  - Never rush a transaction — take a moment to read the wallet prompt fully
+  - If anything looks unfamiliar or unexpected, close the prompt and investigate before signing
+  - Keep records of important transaction hashes, especially for contract deployments
+  - Use a dedicated deployment wallet separate from your main holdings
+</Accordion>

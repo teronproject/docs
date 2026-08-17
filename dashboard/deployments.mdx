@@ -1,0 +1,48 @@
+---
+title: "Token Deployment History on the Teron BNB Chain Dashboard"
+sidebarTitle: "Deployments"
+description: "Read your BNB Chain token deployment history — contract addresses, transaction hashes, status indicators, and options to retry failed deployments on Teron."
+---
+
+The Deployments section of the [Teron dashboard](https://teron.io/dashboard) keeps a record of every token deployment attempt made from your connected wallet. Whether a deployment succeeded, is still processing, or ran into a problem, you will find it here along with the information you need to take next steps.
+
+<Info>
+  Deployment records are tied to your connected wallet address. If you connect a different wallet, you will see the deployment history for that wallet instead.
+</Info>
+
+## What each deployment record shows
+
+Every entry in the Deployments list includes:
+
+- **Token name** — the name assigned to the token at creation
+- **Symbol** — the token ticker
+- **Contract address** — the BEP-20 contract address on BNB Chain (if deployment succeeded)
+- **Deployment date** — when the deployment was initiated
+- **Deployment status** — the current state of the deployment (see below)
+- **Transaction hash** — the on-chain transaction identifier
+
+## Deployment status indicators
+
+| Status | Meaning |
+|---|---|
+| **Successful** | The token contract is live on BNB Chain |
+| **Pending** | The transaction has been submitted and is waiting for on-chain confirmation |
+| **Failed** | The deployment did not complete — see the record for the reason and retry options |
+
+If a deployment shows as **Failed**, the record will include a brief explanation of what went wrong. Where possible, you will also see an option to retry or create a new deployment.
+
+## Finding a specific deployment
+
+The Deployments list is sorted with the most recent entries at the top. You can scroll through the list to find a particular token, or use the search function if you have a long history. Searching by token name or symbol is the quickest way to locate a specific record.
+
+## Viewing on-chain data
+
+Clicking a **contract address** or **transaction hash** in any deployment record opens the corresponding page on BscScan, where you can inspect the full on-chain details of the contract or transaction.
+
+<Note>
+  On-chain data written to BNB Chain is permanent and cannot be altered or removed. The Deployments section in your Teron dashboard is a convenience view of that blockchain data — it helps you find and read your records, but the authoritative source is always BscScan.
+</Note>
+
+## Learn more
+
+For a deeper explanation of how to read your deployment history and understand the information on each record, see the [Deployment History guide](/token-creation/deployment-history).

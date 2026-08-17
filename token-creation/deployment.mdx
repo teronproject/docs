@@ -1,0 +1,104 @@
+---
+title: "Deploying Your BEP-20 Token on BNB Chain"
+sidebarTitle: "Deployment"
+description: "Step-by-step guide to deploying your BEP-20 smart contract on BNB Chain using Teron — from filling in token fields to receiving your contract address."
+---
+
+Deploying your token with Teron pushes a BEP-20 smart contract directly onto BNB Chain from your own wallet. Teron handles the contract generation in the background — you just fill in your token details, review the transaction in your wallet, and sign. The whole process typically takes under five minutes.
+
+Teron's token deployment is free. You only pay the BNB Chain network gas fee, which is typically under $0.50 at normal network conditions.
+
+<Note>
+  Gas fees go entirely to the BNB Chain network validators. Teron does not collect any portion of the gas fee.
+</Note>
+
+## Deployment walkthrough
+
+<Steps>
+  <Step title="Open the token creation page">
+    Go to [teron.io/dashboard/create](https://teron.io/dashboard/create). If your wallet is not already connected, you will be prompted to connect it. Teron uses Web3 wallet authentication — no account or password needed. Make sure your wallet is set to **BNB Chain (chain ID 56)**.
+  </Step>
+
+  <Step title="Fill in your token fields">
+    Complete the four fields on the form:
+
+    - **Token Name** — the full display name (e.g. `My Token`)
+    - **Token Symbol** — the short ticker (e.g. `MTK`)
+    - **Total Supply** — total number of tokens to create (e.g. `1000000`)
+    - **Decimals** — number of decimal places (default `18`)
+
+    See [Token Fields](/token-creation/token-fields) for a full explanation of each field and what to consider when choosing values.
+  </Step>
+
+  <Step title="Review your details">
+    Before proceeding, read through your entries carefully. These values will be written permanently into your smart contract. There is no edit step after deployment — if something is wrong, you would need to deploy a new contract.
+  </Step>
+
+  <Step title="Check your BNB balance">
+    Make sure your connected wallet holds enough BNB to cover the gas fee. A small amount — typically a few cents worth of BNB — is sufficient. If your balance is too low, the transaction will fail before it reaches the network.
+  </Step>
+
+  <Step title="Click Deploy">
+    Click the **Deploy** button on the creation form. Teron will compile your contract using Solidity 0.8.20 and prepare the deployment transaction.
+  </Step>
+
+  <Step title="Sign the transaction in your wallet">
+    Your wallet (MetaMask, Trust Wallet, or another BNB Chain-compatible wallet) will open a confirmation prompt. Review the transaction details shown — particularly the gas fee and the contract being deployed.
+
+    <Warning>
+      Review all details in your wallet before signing. Once you sign and the transaction is broadcast to BNB Chain, it cannot be cancelled or reversed.
+    </Warning>
+
+    Click **Confirm** (or the equivalent button in your wallet) to sign and broadcast the transaction.
+  </Step>
+
+  <Step title="Wait for confirmation">
+    After you sign, the transaction is broadcast to BNB Chain. BNB Chain typically confirms transactions within a few seconds under normal conditions. You will see a pending state in the Teron dashboard while the network processes the transaction.
+  </Step>
+
+  <Step title="Receive your contract address">
+    Once the transaction is confirmed, the Teron dashboard displays your token's contract address. This is the permanent, unique identifier for your token on BNB Chain. Copy it and keep it somewhere accessible — you will need it to add your token to wallets and to use optional services like contract verification.
+  </Step>
+</Steps>
+
+## After deployment
+
+### View your token on BscScan
+
+Your token contract is publicly visible on [bscscan.com](https://bscscan.com) immediately after confirmation. To find it, paste your contract address into the BscScan search bar. You will see the contract details, total supply, token holders, and transaction history.
+
+### Add your token to a wallet
+
+Your token is on-chain, but most wallets won't show it automatically until you import it.
+
+**MetaMask**
+
+1. Open MetaMask and scroll down to the **Tokens** tab
+2. Click **Import tokens**
+3. Select **Custom token** and paste your contract address
+4. MetaMask will auto-fill the symbol and decimals
+5. Click **Add custom token**, then **Import tokens**
+
+**Trust Wallet**
+
+1. Open Trust Wallet and tap the token list icon (top right)
+2. Search for your token symbol — if it doesn't appear, tap **Add Custom Token**
+3. Set the network to **BNB Smart Chain**
+4. Paste your contract address
+5. Trust Wallet will fill in the remaining details
+6. Tap **Done**
+
+<Note>
+  If your token symbol or details don't appear correctly in Trust Wallet or DEXs, consider adding [On-Chain Metadata](/token-creation/on-chain-information). Without on-chain metadata, many wallets display your token as an unknown asset.
+</Note>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Contract Verification" icon="shield-check" href="/token-creation/contract-verification">
+    Publish your source code to BscScan and add the trusted green checkmark to your contract.
+  </Card>
+  <Card title="On-Chain Metadata" icon="database" href="/token-creation/on-chain-information">
+    Publish your token logo, description, and social links so wallets and DEXs display your token correctly.
+  </Card>
+</CardGroup>

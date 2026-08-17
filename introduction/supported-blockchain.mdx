@@ -1,0 +1,57 @@
+---
+title: "Supported Blockchain: BNB Chain BEP-20 Token Deployment"
+sidebarTitle: "Supported Chains"
+description: "Teron currently supports BNB Smart Chain for BEP-20 token deployment. Learn about the network's key characteristics and which chains are planned."
+---
+
+Teron is built natively on **BNB Smart Chain** (also called BNB Chain). It's the only network currently supported for token deployment. All tokens created through Teron follow the **BEP-20 token standard** and are deployed directly to BNB Chain mainnet.
+
+## BNB Smart Chain
+
+BNB Smart Chain is a high-performance blockchain network that runs alongside BNB Beacon Chain. It is fully compatible with the Ethereum Virtual Machine (EVM), which means BEP-20 tokens share the same contract structure as ERC-20 tokens on Ethereum — but with faster confirmation times and much lower gas fees.
+
+<Info>
+  BNB Chain processes blocks roughly every 3 seconds, and gas fees for a standard token deployment are typically **under $0.05**. The network has high liquidity, broad exchange support, and a large existing user base, making it a practical starting point for many new token projects.
+</Info>
+
+### Why Teron focuses on BNB Chain
+
+By concentrating on a single network, Teron can build deeper integrations rather than spread support thin. Teron connects directly to BscScan for contract verification and follows the BEP-20 metadata standards that wallets like Trust Wallet and most BNB Chain DEXs rely on. The result is a smoother deployment experience with less room for things to go wrong.
+
+### What the BEP-20 standard means for your token
+
+BEP-20 is the token standard for BNB Smart Chain. It defines the core functions every token contract must implement — things like transferring tokens, approving spending allowances, and checking balances. All tokens deployed through Teron use standard [OpenZeppelin](https://openzeppelin.com/) BEP-20 contract libraries, which are widely used and publicly auditable.
+
+Your deployed token will be compatible with:
+
+- BNB Chain wallets (MetaMask, Trust Wallet, and others)
+- BscScan — BNB Chain's block explorer
+- Most BNB Chain-based DEXs and trading platforms
+- Token tracking tools that index BNB Chain
+
+<Note>
+  To deploy a token on Teron, you need a wallet connected to **BNB Smart Chain mainnet** and enough **BNB** in that wallet to cover the gas fee. The typical gas cost for a token deployment is under $0.05, but this can vary slightly with network conditions. Teron does not charge a platform fee for the core deployment.
+</Note>
+
+## Other networks
+
+Teron was designed with multi-chain deployment in mind. Support for additional networks is planned. The following chains are on the roadmap as **coming soon**:
+
+| Network | Type | Status |
+|---|---|---|
+| BNB Smart Chain | EVM | ✅ Supported |
+| Ethereum | EVM | Coming soon |
+| Polygon | EVM | Coming soon |
+| Arbitrum | EVM (Layer 2) | Coming soon |
+| Optimism | EVM (Layer 2) | Coming soon |
+| Avalanche | EVM | Coming soon |
+| Solana | Non-EVM | Coming soon |
+| Tron | Non-EVM | Coming soon |
+
+<Warning>
+  No timeline has been confirmed for any of the planned networks. Do not make token launch plans that depend on a specific chain being available by a certain date. Follow [@teronapp on X](https://x.com/teronapp) for updates as new networks are added.
+</Warning>
+
+## Testnet support
+
+If you want to try deploying a token before going to mainnet, Teron supports BNB Chain testnet deployments. You can complete test deployments as part of the platform's Task to Earn program to earn platform credits. Testnet tokens have no real-world value and are useful purely for testing the flow.

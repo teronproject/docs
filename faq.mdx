@@ -1,0 +1,165 @@
+---
+title: "Frequently Asked Questions About Teron"
+sidebarTitle: "FAQ"
+description: "Answers to common questions about creating BEP-20 tokens on BNB Chain with Teron, covering costs, ownership, wallets, and rewards."
+---
+
+Teron is a Web3 token launch platform built on BNB Chain. Whether you are exploring your first token deployment or looking for specifics about fees, ownership, or rewards, the answers below cover the most common questions. If you need anything else, reach out to [hello@teron.io](mailto:hello@teron.io).
+
+<AccordionGroup>
+
+  <Accordion title="What is Teron?">
+    Teron is a self-service token launch platform built natively on BNB Smart Chain. It gives you everything you need to create, deploy, and manage a BEP-20 token — without writing a single line of code.
+
+    You configure your token details (name, symbol, decimals, total supply), connect your wallet, and sign a single transaction. Teron handles the Solidity compilation and smart contract deployment in the background. Optional services like contract verification and on-chain metadata are available as paid add-ons.
+
+    You can explore launched tokens at [teron.io/leaderboard](https://teron.io/leaderboard) or start building at [teron.io](https://teron.io).
+  </Accordion>
+
+  <Accordion title="Do I need coding experience to create a token?">
+    No coding experience is required. Teron manages all of the underlying Solidity code, compilation, and on-chain deployment for you.
+
+    You interact entirely through a dashboard: fill in your token details, choose any optional services, connect your wallet, and confirm the transaction. The platform takes care of the rest.
+
+    All deployed contracts use a standard BEP-20 template based on the OpenZeppelin library, compiled with Solidity 0.8.20.
+  </Accordion>
+
+  <Accordion title="Which blockchains does Teron support?">
+    Teron currently supports **BNB Smart Chain (BNB Chain)** only. All tokens deployed through the platform are BEP-20 tokens that live on BNB Chain.
+
+    Support for additional networks — including Ethereum, Polygon, Arbitrum, Optimism, Avalanche, Solana, and Tron — is planned for future releases. Check [teron.io](https://teron.io) or follow [@teronapp on X](https://x.com/teronapp) for announcements.
+  </Accordion>
+
+  <Accordion title="How much does it cost to create a token?">
+    Token deployment itself is **free**. You only pay the standard BNB Chain gas fee directly to the network. Teron does not collect any fee for the base deployment.
+
+    Optional premium services have the following approximate costs, paid in BNB:
+
+    | Service | Approximate Cost |
+    |---|---|
+    | Contract Verification | ~$2 in BNB |
+    | On-Chain Metadata | ~$3 in BNB |
+
+    Exact pricing in BNB is displayed in the app before you sign any transaction. All fees are sent to Teron's cold wallet and are final once the transaction is confirmed on-chain.
+
+    <Note>
+      Blockchain transactions are irreversible. Always review the exact amount shown in your wallet before signing.
+    </Note>
+  </Accordion>
+
+  <Accordion title="What is a BEP-20 token?">
+    BEP-20 is the token standard used on BNB Smart Chain. It is the BNB Chain equivalent of the ERC-20 standard on Ethereum and defines how tokens behave: how they are transferred, how balances are tracked, and how they interact with wallets, DEXs, and other smart contracts.
+
+    Every token you create on Teron follows the BEP-20 standard, which means it is compatible with MetaMask, Trust Wallet, PancakeSwap, and the broader BNB Chain ecosystem out of the box.
+  </Accordion>
+
+  <Accordion title="Who owns my deployed token?">
+    You do. When you deploy a token through Teron, the smart contract is deployed directly from your wallet. You are recorded as the contract owner on BNB Chain.
+
+    Teron has no admin access, no ownership keys, and no backdoor functions in any deployed contract. Once the contract is on-chain, it operates independently — Teron cannot modify, pause, or delete it.
+
+    <Info>
+      All deployed contracts are verified on BscScan (when you purchase verification), so anyone can inspect the source code and confirm there are no hidden functions.
+    </Info>
+  </Accordion>
+
+  <Accordion title="What is contract verification?">
+    Contract verification means publishing your token's exact Solidity source code to [BscScan](https://bscscan.com). Once verified, your contract page on BscScan shows a green checkmark, and anyone can read the code and confirm what the contract does.
+
+    Verification is important for building credibility with your community and is often a requirement for listings on exchanges and token tracking sites.
+
+    The verification service costs approximately **$2 in BNB**, paid as a Teron service fee. Exact pricing is shown in the app before you confirm.
+  </Accordion>
+
+  <Accordion title="What is on-chain metadata?">
+    On-chain metadata allows you to publish your token's logo, description, website URL, and social media links directly to BNB Chain. Once published, this information is picked up automatically by wallets and decentralised exchanges.
+
+    Practical effects include:
+    - Your token logo appears in Trust Wallet
+    - Your token information is visible on popular DEXs
+    - Your project details are anchored on-chain, not just in Teron's database
+
+    The on-chain metadata service costs approximately **$3 in BNB**, paid as a Teron service fee. Exact pricing is shown in the app before you confirm.
+  </Accordion>
+
+  <Accordion title="What is TERR?">
+    TERR is the Teron Reward token. You earn TERR by completing activities and tasks on the platform, such as:
+
+    - Following Teron on X
+    - Liking and reposting Teron content
+    - Joining the Teron community
+    - Participating in platform campaigns
+
+    TERR is earned through engagement and platform participation. It is separate from TER, the main Teron ecosystem token. Check the Tasks section of your dashboard to see available ways to earn.
+  </Accordion>
+
+  <Accordion title="What is TER?">
+    TER is the main Teron ecosystem token. It plays a central role in the Teron economy and platform ecosystem.
+
+    Details about TER's utility, distribution, and availability will be communicated through official Teron channels. Follow [@teronapp on X](https://x.com/teronapp) for the latest updates.
+  </Accordion>
+
+  <Accordion title="Can I convert TERR to TER?">
+    Conversion between TERR (the reward token) and TER (the main ecosystem token) is planned as a future feature. No conversion rate or timeline has been announced yet.
+
+    <Note>
+      Do not make any financial decisions based on an assumed conversion rate. Check official Teron channels for announcements when this feature launches.
+    </Note>
+  </Accordion>
+
+  <Accordion title="What happens if my deployment transaction fails?">
+    If your deployment transaction fails, the gas fee you paid to the BNB Chain network may still be consumed — this is standard blockchain behaviour that Teron has no control over. Any Teron service fees are only charged on successful transactions.
+
+    If a transaction fails:
+
+    1. Check the transaction hash on [BscScan](https://bscscan.com) to understand the reason for failure.
+    2. Common causes include insufficient BNB balance for gas, network congestion, or wallet configuration issues.
+    3. Correct the issue and retry the deployment from your dashboard.
+    4. If the problem persists, contact [hello@teron.io](mailto:hello@teron.io) with your wallet address and the failed transaction hash.
+
+    <Warning>
+      Gas fees consumed by failed transactions cannot be refunded by Teron — they are paid to BNB Chain validators, not to Teron.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="How do I add my token to MetaMask or Trust Wallet?">
+    Once your token is deployed, you can add it to any compatible wallet using the **Import Token** feature and your contract address.
+
+    **MetaMask:**
+    1. Open MetaMask and make sure you are on the BNB Smart Chain network.
+    2. Scroll down and select **Import tokens**.
+    3. Paste your token's contract address. MetaMask will auto-fill the symbol and decimals.
+    4. Confirm the import.
+
+    **Trust Wallet:**
+    1. Open Trust Wallet and tap the icon to manage tokens.
+    2. Search for your token by contract address.
+    3. Enable the toggle to add it to your wallet view.
+
+    Your contract address is available in the Teron dashboard under your deployed token's details.
+  </Accordion>
+
+  <Accordion title="What is the project leaderboard?">
+    The Teron leaderboard is a public directory of all tokens created through the platform. Each token gets its own public profile page that displays the token name, symbol, description, logo, social links, and contract address.
+
+    The leaderboard is accessible at [teron.io/leaderboard](https://teron.io/leaderboard). Tokens with verified contracts and on-chain metadata receive enhanced profile pages.
+
+    <Info>
+      Inclusion on the leaderboard does not imply any endorsement or verification of a project's legitimacy by Teron. Always do your own research before interacting with any token.
+    </Info>
+  </Accordion>
+
+  <Accordion title="How do I contact Teron support?">
+    You can reach the Teron team by email at [hello@teron.io](mailto:hello@teron.io).
+
+    For the fastest resolution, include the following information in your message:
+
+    - A clear description of the issue
+    - Your wallet address
+    - The contract address, if relevant
+    - The transaction hash, if relevant
+
+    You can also follow [@teronapp on X](https://x.com/teronapp) for platform updates and announcements.
+  </Accordion>
+
+</AccordionGroup>

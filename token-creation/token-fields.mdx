@@ -1,0 +1,85 @@
+---
+title: "Token Fields: Configuring Your BEP-20 Token"
+sidebarTitle: "Token Fields"
+description: "Understand each field on the Teron token creation form — what it does, how to fill it in correctly, and what you cannot change after deployment."
+---
+
+Before you deploy, you need to fill in four fields on the [token creation form](https://teron.io/dashboard/create). These values define what your BEP-20 token is and how it behaves on BNB Chain. Take your time here — once your contract is deployed to the blockchain, these values are permanent.
+
+<Note>
+  All four fields are written directly into your smart contract at deployment time. They cannot be edited, updated, or corrected after the transaction is confirmed. Double-check everything before you click **Deploy**.
+</Note>
+
+## Fields
+
+<ParamField body="Token Name" type="string" required>
+  The full display name of your token. This is the name that appears in wallets, block explorers like BscScan, and most tracking interfaces.
+
+  **Requirements**
+  - Can include letters, numbers, and spaces
+  - Keep it under 50 characters for the best display compatibility across wallets and explorers
+  - Must not be blank
+
+  **Examples**
+  - `My Token`
+  - `Rocket Finance`
+  - `Golden Panda Coin`
+
+  **Best practice:** Choose a name that clearly represents your project. Avoid names that closely mimic well-known tokens or projects, as this can create confusion and raise trust issues with your community.
+</ParamField>
+
+<ParamField body="Token Symbol" type="string" required>
+  The short ticker identifier for your token. This is the abbreviated label shown in trading interfaces, DEX listings, and wallet balances — similar to how `BTC` represents Bitcoin or `BNB` represents Binance Coin.
+
+  **Requirements**
+  - Typically 3–6 uppercase letters (e.g. `MTK`, `GPANDA`)
+  - Numbers are technically allowed but uncommon
+  - Must not be blank
+
+  **Examples**
+  - `MTK`
+  - `RFI`
+  - `GPANDA`
+
+  **Best practice:** Search existing token lists and BscScan before settling on a symbol. Many symbols are already in use across BNB Chain. While duplicate symbols are technically possible on the blockchain, using a unique one avoids confusion for your community and anyone trying to find your token.
+</ParamField>
+
+<ParamField body="Total Supply" type="integer" required>
+  The total number of tokens created at the moment your contract is deployed. All tokens in this supply are sent directly to your wallet immediately after deployment.
+
+  **Requirements**
+  - Must be a whole number (no decimals in this field)
+  - Must be greater than zero
+  - There is no maximum enforced by the form, but choose a realistic number for your project
+
+  **Examples**
+  - `1000000` — one million tokens
+  - `1000000000` — one billion tokens
+  - `21000000` — twenty-one million tokens (common for projects that want to mirror Bitcoin's supply model)
+
+  **Best practice:** Think carefully about your supply in relation to your project. A very large supply (e.g. trillions of tokens) combined with a low price per token is a common pattern, but there is no formula that works for every project. The total supply is fixed at deployment unless your contract includes mint functionality — standard Teron contracts may allow the owner to mint additional tokens after deployment.
+</ParamField>
+
+<ParamField body="Decimals" type="integer" required>
+  The number of decimal places your token supports. This determines the smallest unit of your token that can be transferred or traded.
+
+  **Requirements**
+  - Must be a whole number between `0` and `18`
+  - Defaults to `18`, which is the BEP-20 standard
+
+  **How it works**
+
+  With `18` decimals, one token is represented internally as `1,000,000,000,000,000,000` (10¹⁸) base units. This means your token can be divided into very small fractions, just like BNB itself. With `0` decimals, tokens can only be transferred as whole units.
+
+  | Decimals | Smallest unit | Example |
+  |----------|--------------|---------|
+  | 18 | 0.000000000000000001 | BEP-20 standard |
+  | 8 | 0.00000001 | Common alternative |
+  | 0 | 1 | Whole units only |
+
+  **Best practice:** Leave this at `18` unless you have a specific reason to change it. Most DEXs, wallets, and tools expect `18` decimals for BEP-20 tokens. Changing this value can cause display issues in wallets and compatibility problems with some trading platforms.
+</ParamField>
+
+<Tip>
+  Before you deploy, search [BscScan](https://bscscan.com) and a few DEX token lists for your chosen symbol. Picking a symbol that is already widely used by another project can cause genuine confusion — your community may end up looking at the wrong token.
+</Tip>

@@ -1,0 +1,80 @@
+---
+title: "How Teron Works: From Token Config to BNB Chain Deployment"
+sidebarTitle: "How It Works"
+description: "Learn how Teron takes you from token configuration to a live BEP-20 smart contract on BNB Chain in four straightforward steps — no coding required."
+---
+
+Teron is designed to get you from idea to a deployed BEP-20 token on BNB Chain in under five minutes. There's no signup form, no password to remember, and no Solidity to write. Your wallet is your identity, and every action you take is signed directly by you.
+
+Here's how the process works from start to finish.
+
+## Wallet-first identity
+
+Teron doesn't use traditional accounts. When you connect your BNB Chain wallet — MetaMask, Trust Wallet, or any compatible Web3 wallet — your profile is created automatically. Your wallet address is your identity on the platform.
+
+This means you're always in control. Teron never holds your keys, and the contracts you deploy are owned exclusively by your wallet address.
+
+## The four steps to launching your token
+
+<Steps>
+  <Step title="Configure your token">
+    Open the [Teron dashboard](https://teron.io/dashboard) and fill in your token details:
+
+    - **Name** — the full name of your token (e.g. "My Project Token")
+    - **Symbol** — the ticker (e.g. "MPT")
+    - **Decimals** — usually 18, which matches the BEP-20 standard
+    - **Total supply** — the number of tokens to mint at deployment
+
+    You can also add a logo, description, website, and social links at this stage. These are used to build your token's public profile page at `teron.io/t/{token_name}`.
+
+    <Tip>
+      Get your logo and social links ready before you start. You can update your profile later, but having them from the start means your token looks complete the moment it goes live.
+    </Tip>
+  </Step>
+
+  <Step title="Connect your wallet and review">
+    Once your token details are set, connect your BNB Chain wallet. Teron uses your wallet address as your account — there's nothing else to sign up for.
+
+    Review the token configuration before proceeding. Make sure the name, symbol, and total supply are correct. These values are written into the smart contract and cannot be changed after deployment.
+
+    <Warning>
+      Your token name, symbol, decimals, and total supply are permanent once the contract is deployed. Double-check these before signing the transaction.
+    </Warning>
+  </Step>
+
+  <Step title="Deploy to BNB Chain">
+    Click deploy and sign the transaction in your wallet. Teron generates the BEP-20 smart contract code using standard OpenZeppelin libraries, compiles it, and submits the deployment transaction to BNB Smart Chain.
+
+    You pay only the standard BNB Chain gas fee — typically under $0.05. There is no fee charged by Teron for the core deployment.
+
+    Once the transaction confirms on-chain, your token is live. You'll receive a contract address and a link to your token's public profile page on the Teron leaderboard.
+  </Step>
+
+  <Step title="Optionally verify and publish metadata">
+    After deployment, two optional upgrades are available from your dashboard:
+
+    **Contract Verification (~$2 in BNB)**
+    This publishes your exact smart contract source code to BscScan. It adds a green verification checkmark to your contract page and allows anyone to audit exactly what your token does. The fee is paid in BNB to Teron's cold wallet.
+
+    **On-Chain Metadata (~$3 in BNB)**
+    This writes your token logo, description, and social links directly on-chain. Once published, decentralized wallets like Trust Wallet and DEXs can automatically fetch and display your official project information. The fee is paid in BNB to Teron's cold wallet.
+
+    <Info>
+      Both services are optional. You can deploy a token for free and add these upgrades any time from your [dashboard](https://teron.io/dashboard). Each fee covers the infrastructure cost of submitting and indexing the data — it's a one-time, flat payment per token.
+    </Info>
+  </Step>
+</Steps>
+
+## Fees at a glance
+
+| Action | Cost |
+|---|---|
+| BEP-20 token deployment | Free (BNB gas only, typically under $0.05) |
+| Contract Verification | ~$2 in BNB (paid to Teron) |
+| On-Chain Metadata | ~$3 in BNB (paid to Teron) |
+
+## What happens after launch
+
+Once your token is deployed, you manage everything from [teron.io/dashboard](https://teron.io/dashboard). Your token also appears on the [leaderboard](https://teron.io/leaderboard) and has a public profile at `teron.io/t/{token_name}`.
+
+You can also earn TERR reward tokens by completing platform tasks and referring other builders to Teron.

@@ -1,0 +1,50 @@
+# Source: https://www.teron.io/legal/cookies
+
+# Cookie Policy
+
+Effective date: August 10, 2026 · Last updated: August 10, 2026
+
+This Cookie Policy explains how Teron uses cookies and similar tracking technologies when you visit our platform at teron.io. We keep our cookie usage minimal and transparent.
+
+## 1\. What Are Cookies
+
+Cookies are small text files stored on your device when you visit a website. They help websites remember information about your visit, such as your preferences and login state. Cookies can be "session" cookies that expire when you close your browser, or "persistent" cookies that remain on your device for a set period.
+
+## 2\. Cookies We Use
+
+Essential Cookies. These are required for the platform to function. They handle wallet session authentication, security tokens, and basic application state. Without these cookies, you cannot use Teron. These do not track you across other websites.
+
+Preference Cookies. These remember your settings and choices, such as your preferred theme or dismissed notifications. They improve your experience but are not strictly necessary.
+
+Analytics Cookies. We use privacy-respecting analytics to understand how visitors use Teron. This includes which pages are visited most, how users navigate the platform, and where errors occur. This data is aggregated and does not identify individual users. We use this information to improve the platform.
+
+## 3\. Third-Party Cookies
+
+Some third-party services integrated into Teron may set their own cookies:
+
+- WalletConnect - may store session data for wallet connections
+- Cloudinary - may set cookies when serving uploaded images such as token logos
+
+## 4\. What We Do Not Use
+
+Teron does not use advertising cookies or tracking pixels. We do not serve ads on our platform. We do not share cookie data with advertising networks or data brokers. We do not build behavioral profiles for marketing purposes.
+
+## 5\. Managing Cookies
+
+You can control cookies through your browser settings. Most browsers allow you to block or delete cookies. However, blocking essential cookies will prevent Teron from functioning properly.
+
+Common browser cookie settings can be found in your browser's help documentation. Each browser has its own process for managing cookies.
+
+## 6\. Local Storage
+
+In addition to cookies, Teron may use browser local storage and session storage to maintain application state. This includes wallet connection status and UI preferences. Local storage works similarly to cookies but is not sent with every HTTP request, making it more efficient for storing application data.
+
+## 7\. Updates
+
+We may update this Cookie Policy as we add new features or integrations. Changes will be reflected in the "Last updated" date at the top. We encourage you to review this page periodically.
+
+## 8\. Contact
+
+For questions about our cookie practices, contact us at:
+
+Email: teronproject@gmail.com

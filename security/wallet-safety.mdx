@@ -1,0 +1,100 @@
+---
+title: "Web3 Wallet Safety: Protect Your Keys on BNB Chain"
+sidebarTitle: "Wallet Safety"
+description: "Keep your Web3 wallet secure when using Teron. Learn how to avoid phishing, protect your private keys, and choose the right wallet for token deployments."
+---
+
+Your wallet is the single most important piece of your Web3 security. On Teron, your wallet is your identity — there are no usernames or passwords, only cryptographic keys. That means protecting your wallet is entirely your responsibility, and the steps you take (or skip) have direct, irreversible consequences. This page covers what you need to know to stay safe.
+
+## How Teron uses your wallet
+
+Teron uses Web3 wallet-based authentication. When you connect your wallet and take actions on the platform, you sign a cryptographic message that proves you control the wallet address. No passwords are stored on Teron's servers — authentication lives entirely in your wallet.
+
+<Info>
+  Because authentication is handled through cryptographic signature verification, Teron never sees or stores a password. There is nothing on our servers to steal in a traditional credential breach.
+</Info>
+
+Teron works with MetaMask, Trust Wallet, and other providers through WalletConnect. You stay in control of your keys at all times.
+
+## Teron will never ask for your private key
+
+This is the most important rule in Web3 security. Your private key and seed phrase are the master credentials to your wallet. Anyone who has them can drain your wallet completely — and blockchain transactions cannot be reversed.
+
+<Warning>
+  **Teron will never ask for your private key or seed phrase** — not in a support chat, not by email, not on any form. If anything or anyone ever asks you for these credentials, it is a scam. Stop immediately and do not share them.
+</Warning>
+
+Your private keys never leave your device. Teron has no access to them, and no legitimate part of the platform will ever request them.
+
+## Verify you are on teron.io before connecting
+
+Phishing sites are one of the most common attacks against Web3 users. Attackers create convincing copies of real platforms and trick you into connecting your wallet or approving malicious transactions.
+
+<Warning>
+  Always check that the URL in your browser address bar reads **https://teron.io** before connecting your wallet. Look for the padlock icon confirming a valid HTTPS connection. Bookmark the official site and use that bookmark — do not click links from social media, DMs, or emails you weren't expecting.
+</Warning>
+
+Teron does not send unsolicited messages asking you to connect your wallet or sign a transaction.
+
+## Choose a reputable wallet
+
+Not all wallets offer the same level of security. For most users on Teron, a well-maintained software wallet is a practical starting point:
+
+- **MetaMask** — a widely used browser extension and mobile wallet with a strong security track record
+- **Trust Wallet** — a popular mobile wallet with multi-chain support
+
+For larger holdings, a hardware wallet (such as a Ledger or Trezor) offers significantly stronger protection. Hardware wallets keep your private keys on a physical device that is never exposed to the internet, even when you sign transactions.
+
+<Tip>
+  Consider keeping a dedicated wallet specifically for token deployments on Teron, separate from any wallet holding significant funds. This limits your exposure if a deployment transaction goes wrong or if a connected app behaves unexpectedly.
+</Tip>
+
+## Keep your wallet software updated
+
+Wallet providers regularly release updates that patch security vulnerabilities and improve compatibility. Running an outdated version of MetaMask, Trust Wallet, or any other wallet software can expose you to known exploits.
+
+Check for updates regularly, and only download wallet software directly from official sources — the provider's official website or a well-known app store listing.
+
+## What to do if your wallet is compromised
+
+If you believe your wallet has been compromised — for example, because you accidentally shared your seed phrase or signed a malicious transaction — act immediately:
+
+<Steps>
+  <Step title="Stop using the compromised wallet">
+    Do not send any more transactions from it. Every action you take may be visible to the attacker.
+  </Step>
+  <Step title="Create a new wallet">
+    Set up a fresh wallet using new seed phrases generated on a trusted device. Store the new seed phrase securely offline.
+  </Step>
+  <Step title="Transfer your assets">
+    Move any remaining tokens, BNB, or other assets from the compromised wallet to your new wallet as quickly as possible.
+  </Step>
+  <Step title="Revoke token approvals if applicable">
+    If you granted token spending approvals to any contracts, use a tool like BscScan's token approval checker to revoke them from the new wallet — the attacker may also be able to use those approvals.
+  </Step>
+</Steps>
+
+<Warning>
+  Teron cannot recover access to a compromised or lost wallet. We have no access to private keys and no ability to reverse blockchain transactions. If you lose access to your wallet, the tokens and contracts associated with it may become permanently inaccessible.
+</Warning>
+
+If you have questions or concerns about a security issue related to Teron, contact us at [hello@teron.io](mailto:hello@teron.io).
+
+## Wallet safety checklist
+
+<Accordion title="Quick checklist before connecting your wallet">
+  - [ ] Confirm the URL is **https://teron.io**
+  - [ ] Check the browser padlock icon shows a valid HTTPS certificate
+  - [ ] You are using a reputable wallet (MetaMask, Trust Wallet, hardware wallet)
+  - [ ] Your wallet software is up to date
+  - [ ] You are on **BNB Smart Chain**, not another network
+  - [ ] You have not been asked for your private key or seed phrase
+  - [ ] You accessed the site through a trusted bookmark, not a link in a DM or email
+</Accordion>
+
+<Accordion title="Keeping your seed phrase safe">
+  - Write your seed phrase on paper and store it in a physically secure location
+  - Never photograph it, paste it into a notes app, or store it in cloud storage
+  - Never type it into any website — including sites that look like wallet recovery tools
+  - Consider keeping a second physical copy in a separate, secure location
+</Accordion>

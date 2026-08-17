@@ -1,0 +1,42 @@
+---
+title: "Viewing Your Token Deployment History on Teron"
+sidebarTitle: "Deployment History"
+description: "Access all your past BEP-20 token deployments from the Teron dashboard — including contract addresses, transaction hashes, and verification status."
+---
+
+The Teron dashboard keeps a record of every token you have deployed through the platform. You can use this history to find your contract addresses, check deployment status, access BscScan links, and manage optional services like contract verification and on-chain metadata.
+
+## How to access your deployment history
+
+Go to [teron.io/dashboard](https://teron.io/dashboard) and connect your wallet if prompted. Your deployments are listed in the **Your Deployments** section of the dashboard. All records are tied to the wallet address you used when deploying — if you connect a different wallet, you will see that wallet's deployment history instead.
+
+<Info>
+  Deployment records in the Teron dashboard are linked to your connected wallet address. If you deploy tokens from multiple wallets, each wallet will show its own separate history when connected.
+</Info>
+
+## What each record shows
+
+Every deployment record in your history includes:
+
+| Field | Description |
+|---|---|
+| **Token Name** | The full name you set when deploying (e.g. `My Token`) |
+| **Token Symbol** | The short ticker (e.g. `MTK`) |
+| **Contract Address** | The unique on-chain address for your token contract — clickable to open BscScan |
+| **Deployment Date** | The date and time the contract was deployed |
+| **Status** | Whether the deployment succeeded or failed |
+| **Transaction Hash** | The on-chain identifier for the deployment transaction — links to BscScan |
+| **Verification Status** | Whether contract verification has been completed (if purchased) |
+| **Metadata Status** | Whether on-chain metadata has been published (if purchased) |
+
+Clicking the contract address or transaction hash takes you directly to the relevant page on [bscscan.com](https://bscscan.com), where you can see full on-chain details.
+
+## Failed deployments
+
+If a deployment transaction failed, the record will show a **Failed** status. A failed transaction means the contract was not deployed — but it may still have consumed a small amount of gas. See [Troubleshooting](/token-creation/troubleshooting) for common reasons a deployment can fail and how to resolve them.
+
+## On-chain records are permanent
+
+The Teron dashboard is a convenient interface for your deployment history, but the underlying data lives on BNB Chain itself. Your contract, your deployment transaction, and any verification or metadata transactions are all permanently recorded on-chain and visible on BscScan — regardless of whether the Teron platform is accessible at any given time.
+
+If you ever need to locate a contract you deployed and cannot access the dashboard, you can find it by searching your wallet address on [bscscan.com](https://bscscan.com) and browsing your transaction history.

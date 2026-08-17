@@ -1,0 +1,49 @@
+---
+title: "Prepare BNB for Token Deployment on Teron"
+sidebarTitle: "Prepare BNB"
+description: "Understand what BNB you need before deploying a BEP-20 token on Teron, including network gas fees and optional upgrade service costs."
+---
+
+Token creation on Teron is free — there is no platform fee to generate or deploy your smart contract. However, like every transaction on BNB Chain, deployment requires a small gas fee paid to the network. You will also want a little extra BNB on hand if you plan to use optional services like Contract Verification or On-Chain Metadata.
+
+## What BNB Is Used For
+
+Teron does not collect any fees for core token deployment. All BNB costs go directly to the BNB Chain network or to optional on-chain services:
+
+| Item | Approximate Cost |
+|---|---|
+| Token deployment (gas) | Usually under $0.50 in BNB |
+| Contract Verification | ~$2 in BNB |
+| On-Chain Metadata | ~$3 in BNB |
+
+Gas is the fee BNB Chain charges to process and record your transaction. It is paid to network validators, not to Teron.
+
+<Note>
+  BNB's market price changes constantly, so the exact amount of BNB required for any fee will vary. The figures above reflect typical USD-equivalent values — the actual BNB amount you pay depends on the price of BNB at the time of your transaction.
+</Note>
+
+## Optional Services Explained
+
+**Contract Verification** publishes your smart contract's source code to BscScan, adding a trusted checkmark to your contract's profile. This is useful for building credibility with your community and is often expected by users who want to inspect the code themselves.
+
+**On-Chain Metadata** lets you publish your token's logo, description, and social links directly on the blockchain. Once set, wallets like Trust Wallet and decentralized exchanges can automatically fetch and display your project's official details.
+
+Neither service is required to deploy a working BEP-20 token — they are enhancements you can add at your own pace.
+
+<Info>
+  Teron shows you the current fee in BNB before any payment is required. You will always have a chance to review the cost before signing a transaction in your wallet.
+</Info>
+
+## How Much BNB to Have Ready
+
+For a basic deployment with no optional services, a very small amount of BNB is enough — typically less than $1 equivalent. If you want to use Contract Verification and On-Chain Metadata at the same time, having around $6–$8 equivalent in BNB gives you comfortable headroom.
+
+A good starting point is to have at least a few dollars' worth of BNB in your connected wallet before you begin.
+
+## How to Get BNB
+
+You can acquire BNB through centralized cryptocurrency exchanges that list it, or through decentralized on-chain options. Once purchased, transfer BNB to the wallet address you plan to connect to Teron, and make sure it is on the BNB Chain network (not the BEP-2 Binance Chain network, which uses a different format).
+
+<Warning>
+  Confirm that any BNB you transfer is on **BNB Smart Chain (BEP-20)**, not BEP-2 or another network. Sending BNB on the wrong network means it will not appear in your wallet for use on Teron.
+</Warning>
