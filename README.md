@@ -1,55 +1,29 @@
-# Mintlify Starter Kit
+# Teron
 
-Use the starter kit to get your docs deployed and ready to customize.
+A premium no-code Web3 token launchpad for creating, deploying, and managing BEP-20 smart contracts built on **BNB Smart Chain (BSC)** and compatible with other EVM networks.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Technology Stack
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- **Blockchain**: BNB Smart Chain + EVM-compatible chains  
+- **Smart Contracts**: Solidity ^0.8.20
+- **Frontend**: Next.js 16 + React 19 + wagmi + viem
+- **Development**: OpenZeppelin libraries
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Supported Networks
 
-## AI-assisted writing
+- **BNB Smart Chain Mainnet** (Chain ID: 56)  
+- **BNB Smart Chain Testnet** (Chain ID: 97)  
 
-Set up your AI coding tool to work with Mintlify:
+## Contract Addresses
 
-```bash
-npx skills add https://mintlify.com/docs
-```
+| Network  | TERR (Teron Reward) | TER (Teron) |
+|----------|---------------------|-------------|
+| BNB Mainnet | `0xc5457424698643d8A643FeFE787488C9aA8FBBF0` | `0xc13f58e117f337947297F5ae58AC68522544f367` |
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+## Features
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+- No-code BEP-20 token generation and deployment in 60 seconds
+- Automatic BscScan smart contract verification
+- On-chain metadata and logo publishing
+- BNB gas assistance program for seamless deployment
+- Community leaderboard and public token profiles
